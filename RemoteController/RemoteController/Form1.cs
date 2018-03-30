@@ -16,5 +16,10 @@ namespace RemoteController
         {
             InitializeComponent();
         }
+
+        private void btn_sendCommand_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(tb_inputCommand.Text);
+        }
     }
 }
