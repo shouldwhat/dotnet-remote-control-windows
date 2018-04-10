@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace RemoteController
@@ -20,6 +14,18 @@ namespace RemoteController
         private void btn_sendCommand_Click(object sender, EventArgs e)
         {
             MessageBox.Show(tb_inputCommand.Text);
+
+            string command = tb_inputCommand.Text;
+
+            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe");
+            Process process = new Process();
+
+            process.StartInfo = startInfo;
+            process.Start();
+            process.StandardInput.Write(command + Environment.NewLine);
+            process.StandardInput.Close();
+
+            process.Close();
         }
     }
 }
