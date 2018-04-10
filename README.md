@@ -17,16 +17,16 @@
 ---
 
 * **클래스 구조**
-!{}(/images/class.png)
+![](/images/class.png)
 
 ---
 
-* **시퀀스 **
+* **시퀀스**
 
-		*. **서버 개설**
-		![](/images/서버 개설.png)
-		
-		*. **서버 연결 요청(Client Side)**
-		![](/images/서버 연결 (Client Side).png)
+	*. **서버 개설**
+	![](/images/서버 개설.png)
+
+	*. **서버 연결 요청(Client Side)**
+	![](/images/서버 연결 (Client Side).png)
 
 ---
